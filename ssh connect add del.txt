@@ -1,0 +1,67 @@
+#!/bin/bash
+
+addsshconnect()
+{
+add="-a"
+name_server_option="-n"
+name_server_name=$3
+host_server_option_="-h"
+host_server_name=$5
+user_name_option="-u"
+user_name=$7
+port_option="-p"
+port_number=$9
+pem_key_input=$10
+pem_key_path=$11
+
+if [ $1 == "-a" ] && [ $2 == "-n"  ] && [ $4 == "-h" ] && [ $6 == "-u" ] ;
+then
+if [ $# -eq 7 ] ;
+then
+cd ~/.ssh
+touch config
+echo "Host $3" > config
+echo "HostName $5" > config
+echo "User $7" > config
+chmod 755 config
+cd
+ssh $7@$5
+fi
+fi
+
+if [ $1 == "-a" ] && [ $2 == "-n"  ] && [ $4 == "-h" ] && [ $6 == "-u" ] && [ $8 == "-p" ] ;
+then
+if [ $# -eq 9 ] ;
+then
+cd ~/.ssh
+touch config
+echo "Host $3" > config
+echo "HostName $5" > config
+echo "User $7" > config
+echo "Port $9" > config
+chmod 755 config
+cd
+ssh $7@$5
+fi
+fi
+
+if [ $1 == "-a" ] && [ $2 == "-n"  ] && [ $4 == "-h" ] && [ $6 == "-u" ] && [ $8 == "-p" ] && [ $10 == "-i" ] ;
+then
+if [ $# -eq 11 ] ;
+then
+cd ~/.ssh
+touch config
+echo "Host $3" >> config
+echo "HostName $5" >> config
+echo "User $7" >> config
+echo "Port $9" >> config
+echo "IdentityFile $11" >> config
+chmod 755 config
+cd
+ssh -i ~/.ssh/server3.pem $7@$5
+fi
+fi
+
+}
+
+addsshconnect $@

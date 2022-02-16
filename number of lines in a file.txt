@@ -1,0 +1,32 @@
+#!/bin/bash
+
+file1=$1
+file2=$2
+
+filecomparison()
+{
+if [ -f $file1 ];
+ then
+   if [ -f $file2 ];
+      then
+        var1=`cat $file1 | wc -l`
+        var2=`cat $file2 | wc -l`
+        echo "Total Numner of files in $file1 are $var1"
+        echo "Total Numner of files in $file2 are $var2"
+          if [ $var1 -gt $var2 ];
+           then
+            var3=$(($var1 - $var2))
+            echo "$file1 has $var3 more lines as compared to $file2"
+          else
+            var4=$(($var2 - $var1))
+            echo "$file2 has $var4 more lines as compared to $file1"
+          fi
+   else
+    echo "$file2 Doesn't exist"
+   fi
+else
+ echo "$file1 Doesn't exist"
+fi
+
+}
+filecomparison

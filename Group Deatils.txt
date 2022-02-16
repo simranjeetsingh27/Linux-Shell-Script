@@ -1,0 +1,16 @@
+#!/bin/bash
+#set -ex
+groupdetails()
+{
+#root:x:0:
+#adm:x:4:ec2-user
+Totalgroups=`cat /etc/group | awk -F ":" '{print $1}' | wc -l`
+Membersassociated=`cat /etc/group | awk -F ":" '{print $4}' | sed '/^\s*#/d;/^\s*$/d' | wc -l`
+Groups=$(($Totalgroups - $Membersassociated))
+Sudoreslist=`cat /etc/group | grep ^wheel | awk -F ":" '{print $4}'`
+echo "Their are $Totalgroups present in system"
+echo "$Groups Groups which doesnt't have any associated member"
+echo "List of members who are part of sudo group are $Sudoreslist"
+
+}
+groupdetails

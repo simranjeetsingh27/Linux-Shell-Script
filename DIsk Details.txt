@@ -1,0 +1,21 @@
+#!/bin/bash
+#set -ex
+DiskDetails()
+{
+
+word_count=`df -h | wc -l`
+
+for ((i=2; i<=$word_count; i++))
+do
+filesystem=`df -h | awk "FNR==$i" | awk '{print $1}'`
+size=`df -h | awk "FNR==$i" | awk '{print $2}'`
+#Used=`df -h | awk "FNR==$i" | awk '{print $3}'`
+available=`df -h | awk "FNR==$i" | awk '{print $4}'`
+#useper=`df -h | awk "FNR==$i" | awk '{print $5}'`
+mountedon=`df -h | awk "FNR==$i" | awk '{print $6}'`
+echo "$filesystem is mounted at $mountedon total size is $size out of which $available"
+
+done
+
+}
+DiskDetails

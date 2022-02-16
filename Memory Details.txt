@@ -1,0 +1,21 @@
+#!/bin/bash
+#set -ex
+MemoryDetails()
+{
+
+#word_count=`df -h | wc -l`
+
+for ((i=2; i<=3; i++))
+do
+#filesystem=`df -h | awk "FNR==$i" | awk '{print $1}'`
+size=`free -g | awk "FNR==$i" | awk '{print $2}'`
+#Used=`df -h | awk "FNR==$i" | awk '{print $3}'`
+available=`free -g | awk "FNR==$i" | awk '{print $4}'`
+#useper=`df -h | awk "FNR==$i" | awk '{print $5}'`
+#mountedon=`df -h | awk "FNR==$i" | awk '{print $6}'`
+echo "Total Memory is $size out of which $available is available"
+
+done
+
+}
+MemroyDetails

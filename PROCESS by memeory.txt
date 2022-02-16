@@ -1,0 +1,18 @@
+#!/bin/bash
+#set -ex
+processbymemory()
+{
+
+word_count=`ps -aux | wc -l`
+
+for ((i=2; i<=$word_count; i++))
+do
+memory=`ps -aux | awk "FNR==$i" | awk '{print $4}'`
+PID=`ps -aux | awk "FNR==$i" | awk '{print $2}'`
+Command=`ps -aux | awk "FNR==$i" | awk '{print $NF}'`
+echo "Command $Command with process ID $PID is consuming $memory of memory"
+
+done
+
+}
+processbymemory

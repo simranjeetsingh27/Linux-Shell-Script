@@ -1,0 +1,12 @@
+topProcess()
+{
+line=$1
+process=$2
+line1=$(($line + 1 ))
+if [ $process == "memory" ]
+then
+top -b -o +%MEM | sed -n '7,$p' | head -n $line1
+else
+top -b -o +%CPU | sed -n '7,$p' | head -n $line1
+fi
+}

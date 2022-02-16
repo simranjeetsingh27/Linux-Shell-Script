@@ -1,0 +1,14 @@
+#!/bin/bash
+
+systeminfo()
+{
+hostname=`hostname`
+privateip=`ifconfig | sed -n '2p' | awk '{print $2}'`
+publicip=`wget -qO- icanhazip.com`
+uname=`uname`
+echo "Hostname is $hostname"
+echo "Public ip address is $publicip"
+echo "Private ip address is $privateip"
+echo "Operating system is $uname"
+}
+systeminfo

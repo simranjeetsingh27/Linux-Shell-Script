@@ -1,0 +1,16 @@
+#i/bin/bash
+
+path=$1
+line=$2
+filelister()
+{
+if [ -d "$path" ];
+then
+echo "Showing top $line files and folders"
+cd $path && ls | grep -v '^d' | head -$line && cd
+else
+echo "Directory Doesn't Exist"
+fi
+}
+
+filelister

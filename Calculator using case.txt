@@ -1,0 +1,16 @@
+#!/bin/bash
+
+read -p "Enter First Number:" a
+read -p "Enter Second Number:" b
+read -p "Enter 1 for Add, 2 for sub , 3 for Division :"  c
+case $c in
+1) echo "Sum is = $((a + b))"
+        ;;
+2) echo "Differenece is = $((a - b))"
+        ;;
+3) echo "Division is = $((a / b))"
+        ;;
+*) echo "You have entered wrong input"
+        ;;
+
+esac

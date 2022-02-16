@@ -1,0 +1,21 @@
+#!/bin/bash
+
+number=$1
+
+printname()
+{
+if [ $(($number % 3)) -eq 0 ] && [ $(($number % 5)) -eq 0 ];
+then
+echo "tomcat"
+elif [ $(($number % 3)) -eq 0 ]
+then
+echo "tom"
+elif [ $(($number % 5)) -eq 0 ]
+then
+echo "cat"
+else
+echo "$number is not Divisible by 3 or 5"
+fi
+
+}
+printname

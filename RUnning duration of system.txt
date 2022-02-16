@@ -1,0 +1,34 @@
+#!/bin/bash
+source topProcess.sh
+#source RunningDurationProcess.sh
+
+action=$1
+
+RunningDurationProcess()
+{
+process=$1
+
+if [[ "$process" =~ ^[0-9]+$ ]] ;
+then
+var1=`echo $?`
+else
+var2=`echo $?`
+fi
+
+if [ "$var1" == 0 ] ;
+then
+ps -p "$process" -o etime
+exit
+fi
+if [ -n "$var2" ] ;
+then
+var3=`pidof "$process"`
+ps -p $var3 -o etime
+fi
+
+}
+
+case $action in
+topProcess ) topProcess $2 $3 ;;
+RunningDurationProcess ) RunningDurationProcess "$2" ;;
+esac

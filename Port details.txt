@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+port_name()
+{
+port=`sudo netstat -tulpn | grep LISTEN | awk '{print $4}' | awk -F ":" '{print $2}' | sed '/^\s*#/d;/^\s*$/d'`
+echo "$port"
+}
+port_name

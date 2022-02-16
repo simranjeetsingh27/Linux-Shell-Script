@@ -1,0 +1,35 @@
+#!/bin/bash
+
+function sum()
+{
+        total=$(($a + $b))
+        echo "Sum is = $total"
+}
+function diff()
+{
+        total=$(($a - $b))
+        echo "Diff is = $total"
+}
+function div()
+{
+        total=$(($a / $b))
+        echo "Division is = $total"
+}
+i=1
+while [ $i == 1 ]
+do
+read -p "Enter First Number:" a
+read -p "Enter Second Number:" b
+read -p "Enter 1 for Add, 2 for sub , 3 for Division :"  c
+case $c in
+1) sum $a $b
+        ;;
+2) diff $a $b
+        ;;
+3) div $a $b
+        ;;
+*) echo "You have entered wrong input"
+ ;;
+esac
+read -p "Enter 1 if you wish to Calculate more :" i
+done
