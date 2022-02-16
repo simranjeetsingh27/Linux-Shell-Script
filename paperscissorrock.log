@@ -1,0 +1,49 @@
+[1;36mSTART XXXXXXXXXXX OF  XXXXXXXXXXX GAME XXXXXXXXXXX[0m
+[1;32mStarting time is : Wed Jan 12 16:42:22 UTC 2022[0m
+[1;33mEnter y for playing more, else quit[0m
+Name : Simranjeet
+Simranjeet Choice as : Paper
+computer choice as : Scissor
+Computer won as he chooses Scissor
+Current Score : 
+Computer : 1 Simranjeet Score : 0
+Simranjeet Wants to Continue as he chooses y
+******************************************************
+Simranjeet Choice as : Rock
+computer choice as : Scissor
+Simranjeet won as he chooses Rock
+Current Score : 
+Computer : 1 Simranjeet Score : 1
+Simranjeet Wants to Continue as he chooses y
+******************************************************
+Simranjeet Choice as : Scissor
+computer choice as : Rock
+Computer won as he chooses Rock
+Current Score : 
+Computer : 2 Simranjeet Score : 1
+[1;33mSimranjeet doesn't want to Continue as he chooses n[0m
+[1;32mEnding time is : Wed Jan 12 16:42:44 UTC 2022[0m
+[1;36mEND XXXXXXXXXXXXX OF  XXXXXXXXXXX GAME XXXXXXXXXXX[0m
+
+
+[1;36mSTART XXXXXXXXXXX OF  XXXXXXXXXXX GAME XXXXXXXXXXX[0m
+[1;32mStarting time is : Wed Jan 12 16:42:48 UTC 2022[0m
+[1;33mEnter y for playing more, else quit[0m
+Name : Deepak
+Deepak Choice as : Paper
+computer choice as : Scissor
+Computer won as he chooses Scissor
+Current Score : 
+Computer : 1 Deepak Score : 0
+Deepak Wants to Continue as he chooses y
+******************************************************
+Deepak Choice as : Scissor
+computer choice as : Rock
+Computer won as he chooses Rock
+Current Score : 
+Computer : 2 Deepak Score : 0
+[1;33mDeepak doesn't want to Continue as he chooses n[0m
+[1;32mEnding time is : Wed Jan 12 16:42:59 UTC 2022[0m
+[1;36mEND XXXXXXXXXXXXX OF  XXXXXXXXXXX GAME XXXXXXXXXXX[0m
+
+
