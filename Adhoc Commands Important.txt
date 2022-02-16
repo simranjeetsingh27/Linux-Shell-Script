@@ -1,0 +1,97 @@
+1-Create a script to create an empty file.
+2-Create a script to list out all the files in a directory matching to a pattern.
+3-Print the top N lines after sorting the content of file in Descending order
+4-Return the list of all files with name and their size in a directory.
+5-Print the line number's in the file matching a regex.
+6-Delete a line number from a file.
+7-Count number of lines in a file.
+8-Add a line if not already present in the file.
+9-Add a line below the line number.
+10-Add a line above the line number.
+11-Add a line at the end of file.
+12-Get the line at a specified line number. i.e. 5th line of file
+13-Get the word at a specified position and line number i.e 3rd word in 5th line
+14-Sync the content from source folder to target folder.
+15-Move a file from source folder to target folder.
+16-Create a directory.
+17-Remove a file.
+18-Remove a directory.
+19-Check if a file exists or not
+20-Check if a directory exists
+21-Process a template file that is replacing a content from another. i.e replace "hi" with "hello".
+22-Find files older then N days in a directory.
+23-Delete files older then N days.
+24-Delete Folder older then N days.
+25Search and Replace in Multiple Files
+26.How to print first 5 lines and then 10th line.  
+, range
+; and
+$ lst
+27-How to check if th varibale value contains is e,pty or not 
+28-To add a word between two word usig grep and awk
+29-Do while loop username, age apne aap le lega 
+30-PUBLISH HTML REPORT GIT FOR LAST 10 DAYS 
+
+1-ls -ll | grep "/*$file"
+2-ls -l | grep $pattern
+3-tac $file | head -$line
+4-ls -sh $path
+5-cat $file | grep -n $pattern $file
+6-sed -i '4d' $file
+7-wc -l < $file
+8-grep -qxF "$data" $file || echo "$data" >> $file
+9-sed "${line}a My name is badshah" $file
+10-sed "${line}i My name is badshah" $file
+11-sed "$ a ${line}" $file
+12-sed '3 i New Line with sed' filename
+13-awk 'FNR == 5 {print $3}' filename 
+14-
+15-
+16-mkdir directory_name
+17-rm -r $filepath/*
+18-
+19- if [ -f /path/file ]
+then
+     echo "File exist"
+else
+     echo "File dosesnt exist"
+fi
+
+20-
+if [ -d /path-to-file/filename.txt ]
+then
+     echo "Directory exist"
+else
+     echo "Directory dosesnt exist"
+fi
+
+21-
+26 -cat -n /etc/passwd | sed -n '1,5p;10p' /etc/passwd
+27-Another option: if [ -z "$var" ] ; then echo "Empty"
+28-grep -o "$word1 $word2" $file |  awk '{print $1, $2}' OFS=" $word_to_be_inserted "
+29-while getopts u:a:f: flag
+do
+    case "${flag}" in
+        u) username=${OPTARG};;
+        a) age=${OPTARG};;
+        f) fullname=${OPTARG};;
+    esac
+done
+echo "Username: $username";
+echo "Age: $age";
+echo "Full Name: $fullname"
+
+$./Filename.sh -f 'John Smith' -a 25 -u john
+
+The output is:
+
+                Username : john
+
+                Age: 25
+
+                Full Name: John Smith
+
+30-git log --since=10.days --pretty=tformat:"<p>%an | %cd | %H | %s %n<br> </p>"
+
+
+https://github.com/simranjeetsingh27/github-api-global-lib
