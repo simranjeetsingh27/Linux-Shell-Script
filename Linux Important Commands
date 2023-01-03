@@ -1,1 +1,2 @@
 Add port - sudo firewall-cmd --add-port=8090/tcp --permanent
+Reload port - sudo firewall-cmd --reload
