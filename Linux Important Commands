@@ -1,2 +1,3 @@
 Add port - sudo firewall-cmd --add-port=8090/tcp --permanent
 Reload port - sudo firewall-cmd --reload
+Gitlab version via CLi - sudo rpm -q gitlab-ce    |    sudo gitlab-rake gitlab:env:info
