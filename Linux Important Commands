@@ -1,6 +1,6 @@
 Add port - sudo firewall-cmd --add-port=8090/tcp --permanent
 Reload port - sudo firewall-cmd --reload
-Gitlab version via CLi - sudo rpm -q gitlab-ce    |    sudo gitlab-rake gitlab:env:info
+Gitlab version via CLi - sudo rpm -q gitlab-ce | sudo gitlab-rake gitlab:env:info
 How to get port from docker ps command -  sudo docker ps | cut -d ':' -f2 | awk -F "-" '{print $1}' | sort | tr -d '[:alpha:]' | grep '\S'
 How to get the full conatiner id in docker - var=`docker ps -a --no-trunc | grep ispnashikapi | awk '{print $1}'`
 Java version Change - alternatives --config java
