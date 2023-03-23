@@ -6,4 +6,4 @@ How to get the full conatiner id in docker - var=`docker ps -a --no-trunc | grep
 Java version Change - alternatives --config java
 List only dirtectories - ls -lrth | grep '^d'
 Scp Command working - scp -rv filename user@ip:destination_folder_pat
-Cache Clear - sudo sh -c 'echo 3 >  /proc/sys/vm/drop_caches'
+Cache clear - sudo sh -c 'echo 3 >  /proc/sys/vm/drop_caches'
