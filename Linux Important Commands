@@ -7,3 +7,4 @@ Java version Change - alternatives --config java
 List only dirtectories - ls -lrth | grep '^d'
 Scp Command working - scp -rv filename user@ip:destination_folder_pat
 cache clear - sudo sh -c 'echo 3 >  /proc/sys/vm/drop_caches'
+Delete files with blueocean - rm -rf blue*
