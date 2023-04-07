@@ -9,3 +9,4 @@ Scp Command working - scp -rv filename user@ip:destination_folder_pat
 cache clear - sudo sh -c 'echo 3 >  /proc/sys/vm/drop_caches'
 delete files with blueocean - rm -rf blue*
 to delete files with .tar older than 2 days - find /var/opt/gitlab/backups  -mtime +2 -type f -delete | grep .tar
+Enable firewalld - systemctl enable firewalld
