@@ -13,4 +13,4 @@ Enable firewalld - systemctl enable firewalld
 Start firewalld - systemctl start firewalld
 Removing Jenkins - sudo yum -y remove jenkins
 Scp command for folder copying - scp -r foldername user@ip:destination_folder_path
-To unlisten a port - sudo fuser -k 3081/tcp
+To unlisten a port - sudo fuser -k port_number/tcp
