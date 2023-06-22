@@ -1,4 +1,4 @@
-Add port - sudo firewall-cmd --add-port=8090/tcp --permanent
+Add port - sudo firewall-cmd --add-port=8080/tcp --permanent
 Reload Port - sudo firewall-cmd --reload
 Gitlab version via CLi - sudo rpm -q gitlab-ce | sudo gitlab-rake gitlab:env:info
 How to get port from docker ps command -  sudo docker ps | cut -d ':' -f2 | awk -F "-" '{print $1}' | sort | tr -d '[:alpha:]' | grep '\S'
