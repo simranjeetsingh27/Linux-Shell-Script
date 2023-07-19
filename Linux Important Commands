@@ -15,3 +15,4 @@ Removing Jenkins - sudo yum -y remove jenkins
 Scp command for folder copying - scp -r foldername user@ip:destination_folder_path
 To unlisten a port - sudo fuser -k port_number/tcp
 Multiple Directory making in a single command - mkdir -p /a/a/a/a/a
+For erasing rpm packages - rpm -e package_name 
