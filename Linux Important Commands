@@ -16,3 +16,4 @@ Scp command for folder copying - scp -r foldername user@ip:destination_folder_pa
 To unlisten a port - sudo fuser -k port_number/tcp
 Multiple Directory making in a single command - mkdir -p /a/a/a/a/a
 For erasing rpm packages - rpm -e package_name 
+for seeing rpm packages - rpm -qa | grep gitlab
