@@ -17,3 +17,4 @@ To unlisten a port - sudo fuser -k port_number/tcp
 Multiple Directory making in a single command - mkdir -p /a/a/a/a/a
 For erasing rpm packages - rpm -e package_name 
 for seeing rpm packages - rpm -qa | grep gitlab
+for erasing docker which are prune - sudo docker system prune -a -f
