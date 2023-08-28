@@ -33,7 +33,7 @@ $ lst
 30-PUBLISH HTML REPORT GIT FOR LAST 10 DAYS 
 
 1-ls -ll | grep "/*$file"
-2-ls -l | grep $pattern
+2-ls -l | grep $patern
 3-tac $file | head -$line
 4-ls -sh $path
 5-cat $file | grep -n $pattern $file
