@@ -13,7 +13,7 @@
 13-Get the word at a specified position and line number i.e 3rd word in 5th line
 14-Sync the content from source folder to target folder.
 15-Move a file from source folder to target folder.
-16-Create a directory.
+16-Create a directory
 17-Remove a file.
 18-Remove a directory.
 19-Check if a file exists or not
