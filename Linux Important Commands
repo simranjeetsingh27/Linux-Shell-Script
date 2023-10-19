@@ -14,7 +14,7 @@ Start firewalld - systemctl start firewalld
 Removing Jenkins - sudo yum -y remove jenkins
 Scp command for folder copying - scp -r foldername user@ip:destination_folder_path
 To unlisten a port - sudo fuser -k port_number/tcp
-Multiple Directory making in a single command - mkdir -p /a/a/a/a/
+Multiple Directory making in a single command - mkdir -p /a/a/a/
 For erasing rpm packages - rpm -e package_name 
 for seeing rpm packages - rpm -qa | grep gitlab
 for erasing docker which are prune - sudo docker system prune -a -f
