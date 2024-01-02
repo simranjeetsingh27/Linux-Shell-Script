@@ -1,4 +1,4 @@
-1-Create a script to create an empty file
+1-Create a script to create an empty file.
 2-Create a script to list out all the files in a directory matching to a pattern.
 3-Print the top N lines after sorting the content of file in Descending order
 4-Return the list of all files with name and their size in a directory.
