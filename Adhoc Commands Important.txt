@@ -18,7 +18,7 @@
 18-Remove a directory.
 19-Check if a file exists or not
 20-Check if a directory exists
-21-Process a template file that is replacing a content from another. i.e replace "hi" with "hello".
+21-Process a template file that is replacing a content from another. i.e replace "hi" with "hello"
 22-Find files older then N days in a directory.
 23-Delete files older then N days.
 24-Delete Folder older then N days.
