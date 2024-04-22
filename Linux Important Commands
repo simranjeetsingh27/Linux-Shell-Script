@@ -7,7 +7,7 @@ Java version Change - alternatives --config java
 List only dirtectories - ls -lth | grep '^d'
 Scp Command - scp -rv filename user@ip:destinatio_folder_path
 Cache clear - sudo sh -c 'echo 3 >  /proc/sys/vm/drop_caches'
-delete file with blueocean - rm -rf blue*
+delete file with blueocean - rm -rf blu*
 To delete files with .tar older than 2 days - find /var/opt/gitlab/backups  -mtime +2 -type f -delete | grep .tar
 Enable firewalld - systemctl enable firewalld
 Start firewalld - systemctl start firewalld
