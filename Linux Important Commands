@@ -2,7 +2,7 @@ Add port - sudo firewall-cmd --add-port=8090/tcp --permanent
 Reload port - sudo firewall-cmd --reload
 Gitlab version via CLi - sudo rpm -q gitlab-ce | sudo gitlab-rake gitlab:env:info
 How to get port from docker ps command -  sudo docker ps | cut -d ':' -f2 | awk -F "-" '{print $1}' | sort | tr -d '[:alpha:]' | grep '\S'
-How to get the full conatiner id in docker - var=`docker ps -a --no-trunc | grep ispnasikapi | awk '{print $1}'`
+How to get the full conatiner id in docker - var=`docker ps -a --no-trunc | grep ispnaskapi | awk '{print $1}'`
 Java version Change - alternatives --config java
 List only dirtectories - ls -lth | grep '^d'
 Scp Command - scp -rv filename user@ip:destinatio_folder_path
