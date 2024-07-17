@@ -12,7 +12,7 @@ To delete files with .tar older than 2 days - find /var/opt/gitlab/backups  -mti
 Enable firewalld - systemctl enable firewalld
 Start firewalld - systemctl start firewalld
 Removing Jenkins - sudo yum -y remove jenkins
-Scp command for folder copying - scp -r foldername user@ip:destination_folder_path
+Scp comand for folder copying - scp -r foldername user@ip:destination_folder_path
 To unlisten a port - sudo fuser -k port_number/tcp
 Multiple Directory making in a single command - mkdir -p /a/a/a/
 For erasing rpm packages - rpm -e package_name 
