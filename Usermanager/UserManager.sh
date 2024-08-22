@@ -8,7 +8,7 @@ function addTeam()
 {
 
 sudo groupadd $team
-sudo echo -e "\e[1;33m Newly Group ($team) that made has following Info as of now \e[0m"
+sudo echo -e "\e[1;33m Newly Group ($team) that made has following igitnfo as of now \e[0m"
 sudo grep -w $team /etc/group
 
 }
