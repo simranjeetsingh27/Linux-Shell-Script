@@ -4,7 +4,7 @@
 4-Return the list of all files with name and their size in a directory.
 5-Print the line number's in the file matching a regex
 6-Delete a line number from a file
-7-Count number of lines in a file.
+7-Count number of lines in a file
 8-Add a line if not already present in the file.
 9-Add a line below the line number.
 10-Add a line above the line number.
