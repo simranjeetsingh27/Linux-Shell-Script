@@ -7,7 +7,7 @@
 7-Count number of lines in a file
 8-Add a line if not already present in the file
 9-Add a line below the line number.
-10-Add a line above the line number.
+10-Add a line above the line number
 11-Add a line at the end of file
 12-Get the line at a specified line number. i.e. 5th line of file
 13-Get the word at a specified position and line number i.e 3rd word in 5th line
