@@ -10,7 +10,7 @@ do
 CPU=`ps -aux | awk "FNR==$i" | awk '{print $3}'`
 PID=`ps -aux | awk "FNR==$i" | awk '{print $2}'`
 Command=`ps -aux | awk "FNR==$i" | awk '{print $NF}'`
-echo "Command $Command with process ID $PID is consuing $CPU of CPU"
+echo "Command $Command with process ID $PID is consuming $CPU of CPU"
 
 done
 
