@@ -1,7 +1,7 @@
 1-Create a script to create an empty file
 2-Create a script to list out all the files in a directory maching to a pattern
 3-Print the top N lines after sorting the content of file in Descending order.
-4-Return the list of all files with name and their size in a directory.
+4-Return the list of all files with name and their size in a directory
 5-Print the line number's in the file matching a regex
 6-Delete a line number from a file
 7-Count number of lines in a file
